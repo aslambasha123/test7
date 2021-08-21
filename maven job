@@ -1,0 +1,8 @@
+java -verion
+mvn -version
+mvn clean
+mvn compile
+mvn test
+mvn package
+mvn deploy
+mvn clean
