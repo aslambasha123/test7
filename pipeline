@@ -1,0 +1,19 @@
+pipeline{
+    agent any
+     stage {
+	     stage("build"){
+		   steps{
+		   sh '''
+			  mvn clean
+			     '''
+		   }
+		}
+		  stage("test"){
+		   steps{
+		   sh '''
+			  mvn test
+			     '''
+		   }
+		}
+	}
+}	
